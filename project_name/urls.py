@@ -17,13 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from learn.views import index, add, add2
+from learn.views import index, add1, add2,add3
 
 # Django2.0的 path 和 flask 很像
 # https://kinegratii.github.io/2017/09/25/django2-url-path/
 urlpatterns = [
-    path('add/<int:a>/<int:b>/', add, name='add'),
-    path('add2/', add2, name='add2'),
+    path('add1/', add1, name='add1'),
+    path('add2/<int:a>/<int:b>/', add2, name='add2'),
+    path('add3/', add3, name='add3'),
     path('', index),  # new
     path('admin/', admin.site.urls),
 ]
