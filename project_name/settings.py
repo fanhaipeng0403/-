@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+# python manage.py createsuperuser
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
