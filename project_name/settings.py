@@ -24,6 +24,7 @@ SECRET_KEY = 'kw63l&sz(4iy4lpl9j+!5mrco)ebsznqa^#!9&!$fjjf^z4m8m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS 允许你设置哪些域名可以访问，即使在 Apache 或 Nginx 等中绑定了，这里不允许的话，也是不能访问的。
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -115,4 +116,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# 关于static处理的文章，默认搜索app下的static，以及STATICFILES_DIRS下的文件
+# 通过Python manage.py collectstatic 将所有的static文件集合到 STATIC_ROOT 下
+
+# https://code.ziqiangxuetang.com/django/django-static-files.html
 STATIC_URL = '/static/'
